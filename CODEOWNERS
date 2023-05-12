@@ -1,0 +1,9 @@
+# This is an example CODEOWNERS file
+
+# The default owner for everything in the repository
+*      @eugeneromancenko
+
+# Owners for specific files or directories
+/docs/*      @documentation_team
+/src/*       @development_team
+/tests/*     @qa_team
