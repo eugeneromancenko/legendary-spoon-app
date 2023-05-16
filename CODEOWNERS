@@ -4,6 +4,6 @@
 *      @eugeneromancenko
 
 # Owners for specific files or directories
-/docs/*      @documentation_team
-/src/*       @development_team
-/tests/*     @qa_team
+#/docs/*      @documentation_team
+#/src/*       @development_team
+#/tests/*     @qa_team
