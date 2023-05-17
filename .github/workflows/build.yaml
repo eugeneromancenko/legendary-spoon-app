@@ -52,7 +52,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         # building and pushing seems to be okay with my user, but list images operation is not allowed, missing ecr:ListImages action. 
         run: |
-          docker build -f Dockerfile-timestamp -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -t $REGISTRY/$REPOSITORY:latest .
+          docker build -f Dockerfile -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -t $REGISTRY/$REPOSITORY:latest .
           docker push --all-tags $REGISTRY/$REPOSITORY
           echo "image=$REGISTRY/$REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
